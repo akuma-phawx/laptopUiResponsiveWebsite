@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+button {
   font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +19,8 @@ header {
 
 .logo-container,
 .nav-links,
-.cart {
+.cart,
+.presentation {
   display: flex;
 }
 
@@ -58,4 +60,61 @@ nav {
 .logo-container img,
 .logo {
   cursor: pointer;
+}
+
+.cover img {
+  height: 60vh;
+}
+
+.presentation {
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+.cover {
+  flex: 1;
+}
+
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-add {
+  background: #c36cbb;
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  margin: 30px 0px 0px 30px;
 }
